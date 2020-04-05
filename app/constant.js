@@ -1,0 +1,9 @@
+const GAME_WIDTH =950;
+const GAME_HEIGHT = 600; 
+const OTO_START_X = 50;
+const OTO_START_Y = 300;
+const TRAM_START_X = 150;
+const TRAM_START_Y = 200;
+const START_X = 50;
+const START_Y = 355;
+ SPEED = 1;
