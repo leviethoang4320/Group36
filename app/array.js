@@ -7,9 +7,11 @@ class array{
 		this.createTrams();
 	}
 	update() {
-		this.trams.forEach((tram) => {
-			tram.update();
-		});
+		for(let i = 0; i <5; i++){
+			if(this.game.oto.x == this.trams[i].x){
+				SPEED = 0;
+			}
+		}
 	}
 
 	createTrams() {
@@ -17,7 +19,7 @@ class array{
 		for(let i = 0; i < 7; i++){
 			this.x = TRAM_START_X + a;
 			this.y = TRAM_START_Y;
-			let newTram = new tram(this.game,this.x,this.y,oto);
+			let newTram = new tram(this.game,this.x,this.y);
 			a+=120;
 			this.trams.push(newTram);
 		}

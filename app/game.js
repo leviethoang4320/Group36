@@ -21,7 +21,7 @@ class game {
 	loop(){
 		this.update();
 		this.draw();
-		setTimeout( () => this.loop(),20);
+		setTimeout( () => this.loop(),10);
 	}
 
 	
@@ -29,6 +29,7 @@ class game {
 		this.context.clearRect(OTO_START_X, OTO_START_Y, 1000, 70);
 		this.oto.update();
 		this.array.update();
+		this.handles.update();
 		
 	}
 
